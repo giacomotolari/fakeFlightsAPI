@@ -1,0 +1,29 @@
+
+
+{
+  "name": "fakeflightsapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "API.js",
+  "scripts": {
+    "start": "npx nodemon API.js",
+    "seed": "node src/seed.js",
+    "backend": "npm start",
+    "frontend": "cd ../frontend && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "geolib": "^3.3.3",
+    "moment": "^2.29.1",
+    "moment-random": "^1.1.0",
+    "moment-timezone": "^0.5.34",
+    "node-open-geocoder": "^4.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
